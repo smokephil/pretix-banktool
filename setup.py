@@ -20,9 +20,9 @@ setup(
 
     install_requires=[
         'click==6.*',
-        'fints>=3.0.*',
+        'fints>=3.0.0',
         'requests',
-        'mt-940>=4.12*',
+        'mt-940>=4.120',
     ],
     packages=find_packages(exclude=['tests', 'tests.*']),
     include_package_data=True,
