@@ -32,6 +32,7 @@ def upload_transactions(config, days=30, ignore=None):
         product_id='459BE10AAEE93C6AA90BE6FE3',
         product_version=__version__
     )
+    f.selected_tan_medium = config['fints']['tan_medium']
 
     if not f.get_current_tan_mechanism():
         f.fetch_tan_mechanisms()

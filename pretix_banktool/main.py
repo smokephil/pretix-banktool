@@ -55,6 +55,7 @@ def setup(type):
         click.echo(click.style('WARNING: If you enter your PIN here, it will be stored in clear text on your disk. '
                                'If you leave it empty, you will instead be asked for it every time.', fg='yellow'))
         pin = click.prompt('Your online-banking PIN', hide_input=True, default='', show_default=False)
+        tan_medium = click.prompt('Your online-banking TAN medium')
 
     click.echo('')
     click.echo(click.style('pretix information', fg='blue'))
@@ -80,7 +81,8 @@ def setup(type):
             'endpoint': endpoint,
             'username': username,
             'iban': iban,
-            'pin': pin
+            'pin': pin,
+            'tan_medium': tan_medium
         }
     config['pretix'] = {
         'server': api_server,
