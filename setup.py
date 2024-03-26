@@ -22,7 +22,7 @@ setup(
         'click==6.*',
         'fints>=3.0.0',
         'requests',
-        'mt-940>=4.120',
+        'mt-940>=4.12.0',
     ],
     packages=find_packages(exclude=['tests', 'tests.*']),
     include_package_data=True,
